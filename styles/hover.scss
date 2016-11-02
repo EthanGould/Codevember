@@ -20,6 +20,7 @@ $module-name: 'link';
 	// Novemeber 1st - Change Color.
 	&.highlight{
 		color: black;
+		padding: 0 3px;
 		transition: background-color 0.3s;
 
 		&:hover {
