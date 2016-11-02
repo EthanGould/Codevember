@@ -1,0 +1,32 @@
+$module-name: 'link';
+
+.site__container {
+	font-size: 26px;
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: sans-serif;
+
+}
+
+.#{$module-name} {
+
+	&__wrap {
+		margin: 50px 0 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+
+
+	// Novemeber 1st - Change Color.
+	&.highlight{
+		color: black;
+		padding: 0 5px;
+		transition: color, background-color 0.3s;
+
+		&:hover {
+			background-color: #fcff72;
+		}
+	}
+}
