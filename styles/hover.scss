@@ -17,14 +17,28 @@ $module-name: 'link';
 		text-align: center;
 	}
 
-	// Novemeber 1st - Change Color.
+	// November 1st - Highlighter.
 	&.highlight{
 		color: black;
 		padding: 0 3px;
 		transition: background-color 0.3s;
 
 		&:hover {
-			background-color: #fcff72;
+			background-color: #FCFF72;
+		}
+	}
+
+
+	// November 2nd - Skewed.
+	&.skewed{
+		color: black;
+		padding: 0 3px;
+		transition: background-color, transform 0.3s;
+		display: inline-block;
+
+		&:hover {
+			background-color: #95FC8D;
+			transform: skewX(-10deg);
 		}
 	}
 }
