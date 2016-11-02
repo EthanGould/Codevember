@@ -17,13 +17,10 @@ $module-name: 'link';
 		text-align: center;
 	}
 
-
-
 	// Novemeber 1st - Change Color.
 	&.highlight{
 		color: black;
-		padding: 0 5px;
-		transition: color, background-color 0.3s;
+		transition: background-color 0.3s;
 
 		&:hover {
 			background-color: #fcff72;

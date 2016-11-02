@@ -11,8 +11,7 @@
   text-align: center; }
 .link.highlight {
   color: black;
-  padding: 0 5px;
-  transition: color, background-color 0.3s; }
+  transition: background-color 0.3s; }
   .link.highlight:hover {
     background-color: #fcff72; }
 
