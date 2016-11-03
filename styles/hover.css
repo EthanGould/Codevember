@@ -11,8 +11,17 @@
   text-align: center; }
 .link.highlight {
   color: black;
+  padding: 0 3px;
   transition: background-color 0.3s; }
   .link.highlight:hover {
-    background-color: #fcff72; }
+    background-color: #FCFF72; }
+.link.skewed {
+  color: black;
+  padding: 0 3px;
+  transition: background-color, transform 0.3s;
+  display: inline-block; }
+  .link.skewed:hover {
+    background-color: #95FC8D;
+    transform: skewX(-10deg); }
 
 /*# sourceMappingURL=hover.css.map */
