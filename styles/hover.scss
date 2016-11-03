@@ -5,7 +5,14 @@ $module-name: 'link';
 	max-width: 960px;
 	margin: 0 auto;
 	font-family: sans-serif;
+}
 
+.cover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .#{$module-name} {
@@ -33,12 +40,34 @@ $module-name: 'link';
 	&.skewed{
 		color: black;
 		padding: 0 3px;
-		transition: background-color, transform 0.3s;
+		transition: background-color 0.3s, transform 0.3s;
 		display: inline-block;
 
 		&:hover {
 			background-color: #95FC8D;
 			transform: skewX(-10deg);
+		}
+	}
+
+	// November 3rd - Slide Forward.
+	&.slide-forward {
+		position: relative;
+		display: inline-block;
+		padding: 0 3px;
+		color: black;
+
+		&:after {
+			@extend .cover;
+			display: inline-block;
+			z-index: -1;
+			content: '';
+			transform: translateX(-100%);
+			transition: background-color 0.3s, transform 0.3s;
+		}
+
+		&:hover:after {
+			background-color: #FD8484;
+			transform: translateX(0);
 		}
 	}
 }
