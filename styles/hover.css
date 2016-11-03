@@ -4,6 +4,13 @@
   margin: 0 auto;
   font-family: sans-serif; }
 
+.cover, .link.slide-forward:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 .link__wrap {
   margin: 50px 0 0;
   padding: 0;
@@ -18,10 +25,24 @@
 .link.skewed {
   color: black;
   padding: 0 3px;
-  transition: background-color, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
   display: inline-block; }
   .link.skewed:hover {
     background-color: #95FC8D;
     transform: skewX(-10deg); }
+.link.slide-forward {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  color: black; }
+  .link.slide-forward:after {
+    display: inline-block;
+    z-index: -1;
+    content: '';
+    transform: translateX(-100%);
+    transition: background-color 0.3s, transform 0.3s; }
+  .link.slide-forward:hover:after {
+    background-color: #FD8484;
+    transform: translateX(0); }
 
 /*# sourceMappingURL=hover.css.map */
