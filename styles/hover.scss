@@ -1,12 +1,4 @@
-$module-name: 'link';
-
-.site__container {
-	font-size: 26px;
-	max-width: 960px;
-	margin: 0 auto;
-	font-family: sans-serif;
-}
-
+// helpers
 .cover {
 	position: absolute;
 	top: 0;
@@ -15,13 +7,18 @@ $module-name: 'link';
 	right: 0;
 }
 
+$module-name: 'link';
+
 .#{$module-name} {
 
 	&__wrap {
-		margin: 50px 0 0;
+		max-width: 960px;
+		margin: 50px auto 0;
 		padding: 0;
 		list-style: none;
 		text-align: center;
+		font-size: 16px;
+		font-family: sans-serif;
 	}
 
 	// November 1st - Highlighter.
@@ -68,6 +65,14 @@ $module-name: 'link';
 		&:hover:after {
 			background-color: #FD8484;
 			transform: translateX(0);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.#{$module-name} {
+		&__wrap {
+			font-size: 26px;
 		}
 	}
 }
