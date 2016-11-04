@@ -1,11 +1,4 @@
-// helpers
-.cover {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
+@import './helpers';
 
 $module-name: 'link';
 
@@ -23,8 +16,6 @@ $module-name: 'link';
 
 	// November 1st - Highlighter.
 	&.highlight{
-		color: black;
-		padding: 0 3px;
 		transition: background-color 0.3s;
 
 		&:hover {
@@ -35,8 +26,6 @@ $module-name: 'link';
 
 	// November 2nd - Skewed.
 	&.skewed{
-		color: black;
-		padding: 0 3px;
 		transition: background-color 0.3s, transform 0.3s;
 		display: inline-block;
 
@@ -49,15 +38,10 @@ $module-name: 'link';
 	// November 3rd - Slide Forward.
 	&.slide-forward {
 		position: relative;
-		display: inline-block;
-		padding: 0 3px;
-		color: black;
 
 		&:after {
 			@extend .cover;
-			display: inline-block;
-			z-index: -1;
-			content: '';
+			@extend .after;
 			transform: translateX(-100%);
 			transition: background-color 0.3s, transform 0.3s;
 		}
@@ -65,6 +49,24 @@ $module-name: 'link';
 		&:hover:after {
 			background-color: #FD8484;
 			transform: translateX(0);
+		}
+	}
+
+	// November 4th - Fill Up.
+	&.fill-up {
+		position: relative;
+
+		&:after {
+			@extend .cover;
+			@extend .after;
+			transform: rotateX(-90deg);
+			transition: background-color 0.3s, transform 0.3s;
+		}
+
+		&:hover:after {
+			transform: rotateX(0deg);
+			background-color: #72B4FF;
+			transition: transform 0.3s;
 		}
 	}
 }

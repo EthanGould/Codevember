@@ -1,9 +1,21 @@
-.cover, .link.slide-forward:after {
+a {
+  color: black;
+  padding: 0 3px; }
+
+li {
+  padding-bottom: 10px; }
+
+.cover, .link.slide-forward:after, .link.fill-up:after {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0; }
+
+.after, .link.slide-forward:after, .link.fill-up:after {
+  display: inline-block;
+  z-index: -1;
+  content: ''; }
 
 .link__wrap {
   max-width: 960px;
@@ -14,33 +26,32 @@
   font-size: 16px;
   font-family: sans-serif; }
 .link.highlight {
-  color: black;
-  padding: 0 3px;
   transition: background-color 0.3s; }
   .link.highlight:hover {
     background-color: #FCFF72; }
 .link.skewed {
-  color: black;
-  padding: 0 3px;
   transition: background-color 0.3s, transform 0.3s;
   display: inline-block; }
   .link.skewed:hover {
     background-color: #95FC8D;
     transform: skewX(-10deg); }
 .link.slide-forward {
-  position: relative;
-  display: inline-block;
-  padding: 0 3px;
-  color: black; }
+  position: relative; }
   .link.slide-forward:after {
-    display: inline-block;
-    z-index: -1;
-    content: '';
     transform: translateX(-100%);
     transition: background-color 0.3s, transform 0.3s; }
   .link.slide-forward:hover:after {
     background-color: #FD8484;
     transform: translateX(0); }
+.link.fill-up {
+  position: relative; }
+  .link.fill-up:after {
+    transform: rotateX(-90deg);
+    transition: background-color 0.3s, transform 0.3s; }
+  .link.fill-up:hover:after {
+    transform: rotateX(0deg);
+    background-color: #72B4FF;
+    transition: transform 0.3s; }
 
 @media (min-width: 768px) {
   .link__wrap {
