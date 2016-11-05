@@ -69,6 +69,25 @@ $module-name: 'link';
 			transition: transform 0.3s;
 		}
 	}
+
+	// November 5th - Spin In.
+	&.spin-in {
+		transition: background-color 0.3s, transform 0.3s;
+		position: relative;
+
+		&:after {
+			@extend .cover;
+			@extend .after;
+			transform: rotate(0);
+			transition: background-color 0.3s, transform 0.3s;
+		}
+
+		&:hover:after {
+			background-color: #FCBF5D;
+			transform: rotate(180deg);
+		}
+	}
+
 }
 
 @media (min-width: 768px) {
