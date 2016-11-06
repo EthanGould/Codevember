@@ -101,18 +101,18 @@ $module-name: 'link';
 			@extend .cover;
 			@extend .after;
 			transform: translateY(-100%);
-			transition: background-color 0.3s, transform 0.3s;
+			transition: transform 0.3s;
 		}
 
 		&:after {
 			@extend .cover;
 			@extend .after;
 			transform: translateX(-100%);
-			transition: background-color 0.3s, transform 0.3s;
+			transition: transform 0.3s;
 		}
 
 		&:hover:before {
-			background-color: rgba(20, 40, 255, 0.3);
+			background-color: rgba(0, 110, 255, 0.3);
 			transform: translateX(0);
 		}
 

@@ -68,12 +68,12 @@ li {
     transition-delay: 0.2s; }
   .link.mix-match:before {
     transform: translateY(-100%);
-    transition: background-color 0.3s, transform 0.3s; }
+    transition: transform 0.3s; }
   .link.mix-match:after {
     transform: translateX(-100%);
-    transition: background-color 0.3s, transform 0.3s; }
+    transition: transform 0.3s; }
   .link.mix-match:hover:before {
-    background-color: rgba(20, 40, 255, 0.3);
+    background-color: rgba(0, 110, 255, 0.3);
     transform: translateX(0); }
   .link.mix-match:hover:after {
     background-color: rgba(255, 238, 20, 0.5);
