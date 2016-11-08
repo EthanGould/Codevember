@@ -121,6 +121,18 @@ $module-name: 'link';
 			transform: translateX(0);
 		}
 	}
+
+	// November 7th - Fly In.
+	&.zoom-out {
+		transition: background-color 0.3s, color 0.3s, transform 0.3s;
+		display: inline-block;
+		position: relative;
+
+		&:hover {
+			background-color: #c584ff;
+			transform: perspective(5px) translateZ(-1px);
+		}
+	}
 }
 
 @media (min-width: 768px) {

@@ -78,6 +78,13 @@ li {
   .link.mix-match:hover:after {
     background-color: rgba(255, 238, 20, 0.5);
     transform: translateX(0); }
+.link.zoom-out {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  display: inline-block;
+  position: relative; }
+  .link.zoom-out:hover {
+    background-color: #c584ff;
+    transform: perspective(5px) translateZ(-1px); }
 
 @media (min-width: 768px) {
   .link__wrap {
