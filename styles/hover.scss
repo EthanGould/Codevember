@@ -124,13 +124,37 @@ $module-name: 'link';
 
 	// November 7th - Fly In.
 	&.zoom-out {
-		transition: background-color 0.3s, color 0.3s, transform 0.3s;
+		transition: background-color 0.3s, transform 0.3s;
 		display: inline-block;
 		position: relative;
 
 		&:hover {
 			background-color: #c584ff;
 			transform: perspective(5px) translateZ(-1px);
+		}
+	}
+
+	// November 8th - Censored.
+	&.censored {
+		position: relative;
+
+		&:after {
+			@extend .cover;
+			@extend .after;
+			transform: rotate(-4deg);
+			content: 'censored';
+			display: block;
+			background-color: black;
+			color: white;
+			z-index: 1;
+			opacity: 1;
+			transition: opacity 0.3s, transform 0.3s;
+		}
+
+		&:hover:after {
+			background-color: none;
+			transform: scale(1.05);
+			opacity: 0;
 		}
 	}
 }
