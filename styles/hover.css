@@ -100,6 +100,13 @@ li {
     background-color: none;
     transform: scale(1.05);
     opacity: 0; }
+.link.disappearing {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.4s; }
+  .link.disappearing:hover {
+    opacity: 0;
+    transition: opacity 1s; }
 
 @media (min-width: 768px) {
   .link__wrap {

@@ -157,6 +157,18 @@ $module-name: 'link';
 			opacity: 0;
 		}
 	}
+
+	// November 9th - Disappearing.
+	&.disappearing {
+		position: relative;
+		opacity: 1;
+		transition: opacity 0.4s;
+
+		&:hover {
+			opacity: 0;
+			transition: opacity 1s;
+		}
+	}
 }
 
 @media (min-width: 768px) {
