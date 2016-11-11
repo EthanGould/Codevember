@@ -171,7 +171,7 @@ $module-name: 'link';
 	}
 
 	// November 10th - Roll Out.
-	&.roll-Out {
+	&.roll-out {
 		position: relative;
 
 		&:after,
@@ -193,12 +193,12 @@ $module-name: 'link';
 
 		&:hover:after {
 			transform: rotate(-360deg);
-			background-color: lightblue;
+			background-color: #A6FF70;
 		}
 
 		&:hover:before {
 			transform: rotate(360deg);
-			background-color: lightblue;
+			background-color: #A6FF70;
 		}
 	}
 }
