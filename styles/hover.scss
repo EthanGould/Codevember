@@ -169,6 +169,38 @@ $module-name: 'link';
 			transition: opacity 1s;
 		}
 	}
+
+	// November 10th - Roll Out.
+	&.roll-Out {
+		position: relative;
+
+		&:after,
+		&:before {
+			@extend .after;
+			@extend .cover;
+			transition: transform 0.4s, background-color 0.6s;
+		}
+
+		&:after {
+			left: 50%;
+			transform-origin: 100% 50%;
+		}
+
+		&:before {
+			right: 50%;
+			transform-origin: 0 50%;
+		}
+
+		&:hover:after {
+			transform: rotate(-360deg);
+			background-color: lightblue;
+		}
+
+		&:hover:before {
+			transform: rotate(360deg);
+			background-color: lightblue;
+		}
+	}
 }
 
 @media (min-width: 768px) {
