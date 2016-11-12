@@ -201,6 +201,21 @@ $module-name: 'link';
 			background-color: #A6FF70;
 		}
 	}
+
+	// November 11th - Bounce.
+	&.bounce {
+		position: relative;
+		display: inline-block;
+
+		&:hover {
+			animation-name: bounce;
+			animation-duration: 0.3s;
+			animation-direction: alternate;
+			animation-timing-function: cubic-bezier(.25,1.25,1,.68);
+			animation-iteration-count: infinite;
+			background-color: #FFAC59;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -210,3 +225,21 @@ $module-name: 'link';
 		}
 	}
 }
+
+
+
+@keyframes bounce {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-7px);
+	}
+}
+
+
+
+
+
+

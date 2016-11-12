@@ -123,9 +123,24 @@ li {
   .link.roll-out:hover:before {
     transform: rotate(360deg);
     background-color: #A6FF70; }
+.link.bounce {
+  position: relative;
+  display: inline-block; }
+  .link.bounce:hover {
+    animation-name: bounce;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.25, 1.25, 1, 0.68);
+    animation-iteration-count: infinite;
+    background-color: #FFAC59; }
 
 @media (min-width: 768px) {
   .link__wrap {
     font-size: 26px; } }
+@keyframes bounce {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-7px); } }
 
 /*# sourceMappingURL=hover.css.map */
