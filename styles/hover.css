@@ -5,14 +5,14 @@ a {
 li {
   padding-bottom: 10px; }
 
-.cover, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before {
+.cover, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before, .link.layered:after, .link.layered:before {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0; }
 
-.after, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before {
+.after, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before, .link.layered:after, .link.layered:before {
   display: inline-block;
   z-index: -1;
   content: ''; }
@@ -133,6 +133,30 @@ li {
     animation-timing-function: cubic-bezier(0.25, 1.25, 1, 0.68);
     animation-iteration-count: infinite;
     background-color: #FFAC59; }
+.link.layered {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s; }
+  .link.layered:hover {
+    animation-name: layer;
+    animation-duration: 1.2s; }
+  .link.layered:hover:after {
+    transform: rotateY(360deg);
+    transform-origin: 100% 50%;
+    transition: transform 0.6s;
+    x-index: 2; }
+  .link.layered:hover:before {
+    transform: rotateX(360deg);
+    transform-origin: 50% 100%;
+    transition: transform 0.6s;
+    transition-delay: 0.6s;
+    x-index: 5; }
+  .link.layered:after {
+    color: red;
+    content: attr(data-hover); }
+  .link.layered:before {
+    content: attr(data-hover);
+    color: black; }
 
 @media (min-width: 768px) {
   .link__wrap {
@@ -142,5 +166,12 @@ li {
     transform: translateY(0); }
   to {
     transform: translateY(-7px); } }
+@keyframes layer {
+  0% {
+    color: black; }
+  86% {
+    color: red; }
+  89% {
+    color: black; } }
 
 /*# sourceMappingURL=hover.css.map */

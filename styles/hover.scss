@@ -1,6 +1,7 @@
 @import './helpers';
 
 $module-name: 'link';
+$mid-layer-color: red;
 
 .#{$module-name} {
 
@@ -216,6 +217,49 @@ $module-name: 'link';
 			background-color: #FFAC59;
 		}
 	}
+
+
+	// November 12th - Layered.
+	&.layered {
+		position: relative;
+		display: inline-block;
+		transition: transform 0.5s;
+
+		&:hover {
+			animation-name: layer;
+			animation-duration: 1.2s;			
+		}
+
+		&:hover:after {
+			transform: rotateY(360deg);
+			transform-origin: 100% 50%;
+			transition: transform 0.6s;
+			x-index: 2;
+		}
+
+
+		&:hover:before {
+			transform: rotateX(360deg);
+			transform-origin: 50% 100%;
+			transition: transform 0.6s;
+			transition-delay: 0.6s;
+			x-index: 5;
+		}
+
+		&:after {
+			@extend .after;
+			@extend .cover;
+			color: $mid-layer-color;
+			content: attr(data-hover);
+		}
+
+		&:before {
+			@extend .after;
+			@extend .cover;
+			content: attr(data-hover);
+			color: black;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -226,8 +270,7 @@ $module-name: 'link';
 	}
 }
 
-
-
+// November 11th - Bounce.
 @keyframes bounce {
 	from {
 		transform: translateY(0);
@@ -235,6 +278,21 @@ $module-name: 'link';
 
 	to {
 		transform: translateY(-7px);
+	}
+}
+
+// November 12th - Layered.
+@keyframes layer {
+	0% {
+		color: black;
+	}
+
+	86% {
+		color: $mid-layer-color;
+	}
+
+	89% {
+		color: black;
 	}
 }
 
