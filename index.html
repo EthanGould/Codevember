@@ -10,61 +10,601 @@
 		<!-- November 1st: Highlight -->
 		<li>
 			<p>The <a href="javascript:;" class="link highlight">highlighter</a> effect for November 1st</p>
+
+				<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td><pre style="margin: 0; line-height: 125%">// November 1st - Highlighter.
+<span>&amp;</span>.highlight{
+	transition: background-color 0.3s;
+
+	<span>&amp;</span>:hover {
+		background-color: #FCFF72;
+	}
+}
+</pre></td></tr></table></div>
+</code>
+
 		</li>
 
 		<!-- November 2nd: Skewed -->
 		<li>
 			<p>The <a href="javascript:;" class="link skewed">skewed</a> effect for November 2nd</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></td><td><pre style="margin: 0; line-height: 125%">// November 2nd - Skewed.
+<span>&amp;</span>.skewed {
+	transition: background-color 0.3s, transform 0.3s;
+	display: inline-block;
+
+	<span>&amp;</span>:hover {
+		background-color: #95FC8D;
+		transform: skewX(-10deg);
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 3rd: Slide Forward -->
 		<li>
 			<p>The <a href="javascript:;" class="link slide-forward">slide forward</a> effect for November 3rd</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></td><td><pre style="margin: 0; line-height: 125%">// November 3rd - Slide Forward.
+<span>&amp;</span>.slide-forward {
+	position: relative;
+
+	<span>&amp;</span>:after {
+		@extend .cover;
+		@extend .after;
+		transform: translateX(-100%);
+		transition: background-color 0.3s, transform 0.3s;
+	}
+
+	<span>&amp;</span>:hover:after {
+		background-color: #FD8484;
+		transform: translateX(0);
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 4th: Drop Down -->
 		<li>
 			<p>The <a href="javascript:;" class="link fill-up">fill up</a> effect for November 4th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td><td><pre style="margin: 0; line-height: 125%">// November 4th - Fill Up.
+<span>&amp;</span>.fill-up {
+	position: relative;
+
+	<span>&amp;</span>:after {
+		@extend .cover;
+		@extend .after;
+		transform: rotateX(-90deg);
+		transition: background-color 0.3s, transform 0.3s;
+	}
+
+	<span>&amp;</span>:hover:after {
+		transform: rotateX(0deg);
+		background-color: #72B4FF;
+		transition: transform 0.3s;
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 5th: Spin In -->
 		<li>
 			<p>The <a href="javascript:;" class="link spin-in">spin in</a> effect for November 5th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td><td><pre style="margin: 0; line-height: 125%">// November 5th - Spin In.
+<span>&amp;</span>.spin-in {
+	transition: background-color 0.3s, transform 0.3s;
+	position: relative;
+
+	<span>&amp;</span>:after {
+		@extend .cover;
+		@extend .after;
+		transform: rotate(0);
+		transition: background-color 0.3s, transform 0.3s;
+	}
+
+	<span>&amp;</span>:hover:after {
+		background-color: #FCBF5D;
+		transform: rotate(180deg);
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 6th: Mix Match -->
 		<li>
-			<p>The <a href="javascript:;" class="link mix-match">mix 'n match</a> effect for November 6th</p>
+			<p>The <a href="javascript:;" class="link mix-match">mix 'n match</a> effect for November 6th
+			</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre></td><td><pre style="margin: 0; line-height: 125%">// November 6th - Mix Match.
+<span>&amp;</span>.mix-match {
+	position: relative;
+
+	<span>&amp;</span>:hover {
+		background-color: rgba(0, 255, 10, 0.5);
+		transition-delay: 0.2s;
+	}
+
+	<span>&amp;</span>:before {
+		@extend .cover;
+		@extend .after;
+		transform: translateY(-100%);
+		transition: transform 0.3s;
+	}
+
+	<span>&amp;</span>:after {
+		@extend .cover;
+		@extend .after;
+		transform: translateX(-100%);
+		transition: transform 0.3s;
+	}
+
+	<span>&amp;</span>:hover:before {
+		background-color: rgba(0, 110, 255, 0.3);
+		transform: translateX(0);
+	}
+
+	<span>&amp;</span>:hover:after {
+		background-color: rgba(255, 238, 20, 0.5);
+		transform: translateX(0);
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 7th: Zoom Out -->
 		<li>
 			<p>The <a href="javascript:;" class="link zoom-out">zoom out</a> effect for November 7th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></td><td><pre style="margin: 0; line-height: 125%">// November 7th - Fly In.
+<span>&amp;</span>.zoom-out {
+	transition: background-color 0.3s, transform 0.3s;
+	display: inline-block;
+	position: relative;
+
+	<span>&amp;</span>:hover {
+		background-color: #c584ff;
+		transform: perspective(5px) translateZ(-1px);
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 8th: Censored -->
 		<li>
 			<p>The <a href="javascript:;" class="link censored">something explicit</a> effect for November 8th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></td><td><pre style="margin: 0; line-height: 125%">// November 8th - Censored.
+<span>&amp;</span>.censored {
+	position: relative;
+
+	<span>&amp;</span>:after {
+		@extend .cover;
+		@extend .after;
+		transform: rotate(-4deg);
+		content: &#39;censored&#39;;
+		display: block;
+		background-color: black;
+		color: white;
+		z-index: 1;
+		opacity: 1;
+		transition: opacity 0.3s, transform 0.3s;
+	}
+
+	<span>&amp;</span>:hover:after {
+		background-color: none;
+		transform: scale(1.05);
+		opacity: 0;
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 9th: Disappearing -->
 		<li>
 			<p>The <a href="javascript:;" class="link disappearing">disappearing</a> effect for November 9th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></td><td><pre style="margin: 0; line-height: 125%">// November 9th - Disappearing.
+<span>&amp;</span>.disappearing {
+	position: relative;
+	opacity: 1;
+	transition: opacity 0.4s;
+
+	<span>&amp;</span>:hover {
+		opacity: 0;
+		transition: opacity 1s;
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 10th: Roll Out -->
 		<li>
 			<p>The <a href="javascript:;" class="link roll-out">roll out</a> effect for November 10th</p>
+		
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></td><td><pre style="margin: 0; line-height: 125%">// November 10th - Roll Out.
+<span>&amp;</span>.roll-out {
+	position: relative;
+
+	<span>&amp;</span>:after,
+	<span>&amp;</span>:before {
+		@extend .after;
+		@extend .cover;
+		transition: transform 0.4s, background-color 0.6s;
+	}
+
+	<span>&amp;</span>:after {
+		left: 50%;
+		transform-origin: 100% 50%;
+	}
+
+	<span>&amp;</span>:before {
+		right: 50%;
+		transform-origin: 0 50%;
+	}
+
+	<span>&amp;</span>:hover:after {
+		transform: rotate(-360deg);
+		background-color: #A6FF70;
+	}
+
+	<span>&amp;</span>:hover:before {
+		transform: rotate(360deg);
+		background-color: #A6FF70;
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 11th: Bounce -->
 		<li>
 			<p>The <a href="javascript:;" class="link bounce">bounce</a> effect for November 11th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></td><td><pre style="margin: 0; line-height: 125%">// November 11th - Bounce.
+<span>&amp;</span>.bounce {
+	position: relative;
+	display: inline-block;
+
+	<span>&amp;</span>:hover {
+		animation-name: bounce;
+		animation-duration: 0.3s;
+		animation-direction: alternate;
+		animation-timing-function: cubic-bezier(.25,1.25,1,.68);
+		animation-iteration-count: infinite;
+		background-color: #FFAC59;
+	}
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-7px);
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 
 		<!-- November 11th: Layered -->
 		<li>
 			<p>The <a href="javascript:;" class="link layered" data-hover="layered">layered</a> effect for November 12th</p>
+
+			<!-- HTML generated using hilite.me --><code><div style=" overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%; color: grey;"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre></td><td><pre style="margin: 0; line-height: 125%">// November 12th - Layered.
+$mid-layer-color: red;
+<span>&amp;</span>.layered {
+	position: relative;
+	display: inline-block;
+	transition: transform 0.5s;
+
+	<span>&amp;</span>:hover {
+		animation-name: layer;
+		animation-duration: 1.9s;			
+	}
+
+	<span>&amp;</span>:hover:after {
+		transform: rotateY(360deg);
+		transform-origin: 100% 50%;
+		transition: transform 1s;
+		x-index: 2;
+	}
+
+
+	<span>&amp;</span>:hover:before {
+		transform: rotateX(360deg);
+		transform-origin: 50% 100%;
+		transition: transform 1s;
+		transition-delay: 1s;
+		x-index: 5;
+	}
+
+	<span>&amp;</span>:after {
+		@extend .after;
+		@extend .cover;
+		color: $mid-layer-color;
+		content: attr(data-hover);
+	}
+
+	<span>&amp;</span>:before {
+		@extend .after;
+		@extend .cover;
+		content: attr(data-hover);
+		color: black;
+	}
+}
+
+@keyframes layer {
+	0% {
+		color: black;
+	}
+
+	85% {
+		color: $mid-layer-color;
+	}
+
+	86% {
+		color: black;
+	}
+}
+</pre></td></tr></table></div></code>
+
 		</li>
 	</ul>
 </body>

@@ -2,8 +2,25 @@ a {
   color: black;
   padding: 0 3px; }
 
+p {
+  margin-bottom: 30px; }
+
 li {
-  padding-bottom: 10px; }
+  padding-bottom: 80px; }
+
+code {
+  text-align: left;
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 12px;
+  overflow: scroll;
+  box-shadow: 8px 8px 10px #AAAAAA;
+  border-radius: 3px; }
+  code div {
+    border-radius: 3px;
+    background-color: black;
+    color: #2bed0e; }
 
 .cover, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before, .link.layered:after, .link.layered:before {
   position: absolute;
