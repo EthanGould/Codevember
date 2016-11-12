@@ -16,7 +16,9 @@ code {
   font-size: 12px;
   overflow: scroll;
   box-shadow: 8px 8px 10px #AAAAAA;
-  border-radius: 3px; }
+  border-radius: 3px;
+  max-height: 350px;
+  overflow: scroll; }
   code div {
     border-radius: 3px;
     background-color: black;
