@@ -1,3 +1,29 @@
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  background-color: tomato;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  z-index: 100;
+  box-shadow: 0px 4px 8px #AAAAAA; }
+
+footer {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background-color: #E9E9E9; }
+  footer p, footer a {
+    margin: 0;
+    color: black; }
+
 a {
   color: black;
   padding: 0 3px; }
@@ -23,7 +49,6 @@ code {
     border-radius: 3px;
     border: none;
     background-color: white;
-    color: #2bed0e;
     color: grey; }
 
 .cover, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before, .link.layered:after, .link.layered:before {
@@ -43,12 +68,11 @@ code {
     width: 60%; } }
 .link__wrap {
   max-width: 960px;
-  margin: 50px auto 0;
+  margin: 100px auto 0;
   padding: 0;
   list-style: none;
   text-align: center;
-  font-size: 16px;
-  font-family: sans-serif; }
+  font-size: 16px; }
 .link.highlight {
   transition: background-color 0.3s; }
   .link.highlight:hover {
