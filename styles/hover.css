@@ -11,18 +11,20 @@ li {
 code {
   text-align: left;
   display: block;
-  max-width: 60%;
+  max-width: 100%;
   margin: 0 auto;
   font-size: 12px;
   overflow: scroll;
-  box-shadow: 8px 8px 10px #AAAAAA;
+  box-shadow: 0px 0px 15px #AAAAAA;
   border-radius: 3px;
   max-height: 350px;
   overflow: scroll; }
   code div {
     border-radius: 3px;
-    background-color: black;
-    color: #2bed0e; }
+    border: none;
+    background-color: white;
+    color: #2bed0e;
+    color: grey; }
 
 .cover, .link.slide-forward:after, .link.fill-up:after, .link.spin-in:after, .link.mix-match:before, .link.mix-match:after, .link.censored:after, .link.roll-out:after, .link.roll-out:before, .link.layered:after, .link.layered:before {
   position: absolute;
@@ -36,6 +38,9 @@ code {
   z-index: -1;
   content: ''; }
 
+@media (min-width: 768px) {
+  code {
+    width: 60%; } }
 .link__wrap {
   max-width: 960px;
   margin: 50px auto 0;

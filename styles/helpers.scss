@@ -15,19 +15,21 @@ li {
 code {
 	text-align: left;
 	display: block;
-	max-width: 60%;
+	max-width: 100%;
 	margin: 0 auto;
 	font-size: 12px;
 	overflow: scroll;
-	box-shadow: 8px 8px 10px #AAAAAA;
+	box-shadow: 0px 0px 15px #AAAAAA;
 	border-radius: 3px;
 	max-height: 350px;
 	overflow: scroll;
 
 	div {
 		border-radius: 3px;
-		background-color: black;
+		border: none;
+		background-color: white;
 		color: #2bed0e;
+		color: grey;
 	}
 }
 
@@ -43,4 +45,10 @@ code {
 	display: inline-block;
 	z-index: -1;
 	content: '';
+}
+
+@media (min-width: 768px) {
+	code {
+		width: 60%;
+	}
 }
